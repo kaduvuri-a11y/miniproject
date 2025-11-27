@@ -1,0 +1,41 @@
+ <div class="parent">
+
+  <div class="nav">
+    <i class="bi bi-shop"></i>
+    <h3>ShopEsay</h3>
+  </div>
+
+  <div class="middle">
+    <form [formGroup]="loginform" (ngSubmit)="login()">
+
+      <h1><i class="bi bi-box-arrow-in-right"></i> Login</h1>
+
+      <label>Email or Number</label>
+      <input type="text" placeholder="Enter Email or Number" formControlName="emailOrMobile">
+
+      <label>Password</label>
+      <div class="password-box">
+        <input type="password" placeholder="Enter your Password" formControlName="password">
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+        <a routerLink="/forgotpassword">Forget password</a>
+      </div>
+
+      <button type="submit"><i class="bi bi-box-arrow-in-right"></i> Login</button>
+
+      <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
+
+    </form>
+  </div>
+
+</div>
+
+
+
+
+
+

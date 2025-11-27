@@ -1,0 +1,31 @@
+
+<div class="parent">
+<div class="nav">
+ <i class="bi bi-shop"></i> <h3>ShopEsay</h3>
+ </div>
+
+<div class="middle">
+    <form [formGroup]="loginform" (ngSubmit)="submit()">
+    <h1><i class="bi bi-person-add"></i> Sign up</h1>
+    <label for="">Full Name</label><br>
+    <input type="text" placeholder="Enter full name " formControlName="name"><br>
+    <label for="">Email</label><br>
+    <input type="email" placeholder="Enter Email " formControlName="email"><br>
+    <label for="">Moblie Number</label><br>
+    <input type="tel" placeholder="Enter 10-digit Number " formControlName="mobile"><br>
+    <label for="">Password</label><br>
+    <input type="password" placeholder="enter password(min 6 charactors)" formControlName="password"><i class="fa fa-eye" id="togglePassword"></i><br>
+    <label for="">Confirm Password</label><br>
+    <input type="password" placeholder="confiram  your password" formControlName="confirmpassword">
+    
+    <div class="checkbox">
+    <input type="checkbox" value="">I agree to the 
+    <a href="forget password">Terms&conditions</a><br></div>
+    <button type="submit"><i class="bi bi-person-add"></i>sing up</button><br>
+    <p>Alredy have an account?<a href="">Login</a></p>
+
+</form>
+</div>
+
+
+

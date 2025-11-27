@@ -1,0 +1,48 @@
+<p>add-product works!</p>
+<h1></h1>
+
+<header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-store"></i>
+            <span><i class="bi bi-gear"></i>admin panel</span>
+        </div>
+         <nav class="nav-items">
+            <a href="#"><i class="bi bi-house-add-fill"></i> view store</a>
+            
+           
+            <a href=><i class="bi bi-box-arrow-right"></i> Logout</a>
+        </nav>
+    </header>
+    <div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>image</th>
+            <th>name</th>
+            <th>Category</th>
+            <th>price</th>
+            <th>stock</th>
+            <th>rating</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let pr of product">
+        <td><img src="{{pr.imageUrl}}" alt="" width="50px" height="50px"></td>
+        <td>{{pr.name}}</td>
+        <td>{{pr.category}}</td>
+        <td>
+  <span class="original-price">{{ pr.price | currency }}</span><br>
+  <span class="discount-price">{{ pr.discountPrice  }}</span>
+</td>
+
+        <td>{{pr.stock}}</td>
+        <td>{{pr.rating}}</td>
+        <td>
+            <button><i class="bi bi-pencil-square"></i></button>
+            <button><i class="bi bi-trash3"></i></button>
+        </td>
+    </tr>
+</tbody>
+</table>   
+</div> 

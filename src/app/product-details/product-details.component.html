@@ -1,0 +1,46 @@
+
+
+
+
+
+    <!-- HEADER -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-store"></i>
+            <span>ShopEase</span>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search products..." />
+            <button><i class="fa fa-search"></i></button>
+        </div>
+
+        <nav class="nav-items">
+            <a href="#"><i class="bi bi-cart3"></i> Cart</a>
+            <a href="#"> <i class="bi bi-person-circle"></i>logout <i class="fa fa-caret-down"></i></a>
+            <a href="#"><i class="bi bi-gear"></i>Admin</a>
+        </nav>
+    </header>
+
+   <div class="pr">
+<div><img [src]="product.imageUrl" alt=""></div>
+   <div> <h1>{{ product.name }}</h1>
+    <h2 class="price">Price: {{ product.price }}</h2>
+    <h2 class="price" >discountPrice: {{  product.discountPrice }}</h2>
+
+    <hr>
+
+    <h2>Brand: {{ product.brand }}</h2>
+    <h2>Category: {{ product.category }}</h2>
+    <h2>Description:<h4 >{{product.description}}</h4></h2>
+    <button class="btn btn-dark">Add to cart</button>
+</div>
+
+   </div>
+   
+   <div class="b">
+    <h6 >
+         © 2024 ShopEase. All rights reserved.
+        </h6>
+   </div>
+   

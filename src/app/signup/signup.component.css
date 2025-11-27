@@ -1,0 +1,138 @@
+.parent {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* FULL-WIDTH NAVBAR */
+
+
+.nav h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Middle (form container) */
+.middle {
+    background: #f7f7f7;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    margin-top: 130px;
+}
+
+.middle h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Inputs */
+.middle input[type="text"],
+.middle input[type="email"],
+.middle input[type="tel"],
+.middle input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 6px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.middle input[type="text"]:focus,
+.middle input[type="password"]:focus {
+    border-color: royalblue;
+    box-shadow: 0 0 4px rgba(65,105,225,0.4);
+}
+
+/* Password icon box */
+.password-box {
+    position: relative;
+}
+
+.password-box i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Checkbox section */
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 20px 0;
+    font-size: 14px;
+}
+
+.checkbox a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: royalblue;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #2456dd;
+}
+
+/* Bottom text */
+.middle p,
+.botom p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.middle a,
+.botom a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+.middle a:hover,
+.botom a:hover {
+    text-decoration: underline;
+}
+/* FULL-WIDTH NAVBAR (correct) */
+.nav {
+    position: fixed;      /* stays at top, independent of parent */
+    top: 0;
+    left: 0;
+    width: 100vw;         /* full screen width */
+    background: royalblue;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    z-index: 1000;
+}
