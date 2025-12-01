@@ -1,0 +1,21 @@
+<h1><i class="bi bi-boxes"></i> add product mangement</h1>
+<form [formGroup]="productform" (ngSubmit)="submit()">
+<label for="">product name</label>
+<input type="text" formControlName="name"><br>
+<label for="">product image</label>
+<input type="text" formControlName="imageUrl"><br>
+<label for="">barnd</label>
+<input type="text" formControlName="brand"><br>
+<label for="">price</label>
+<input type="text" formControlName="price"><br>
+<label for="">stock</label>
+<input type="text" formControlName="stock"><br>
+<label for="">catagery</label>
+<input type="text" formControlName="category"><br>
+<label for="">Description</label>
+<input type="text" formControlName="description"><br>
+
+
+
+<input type="submit" >
+</form>

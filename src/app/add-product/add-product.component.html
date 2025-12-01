@@ -4,7 +4,10 @@
 <header class="navbar">
         <div class="logo">
             <i class="fa-solid fa-store"></i>
-            <span><i class="bi bi-gear"></i>admin panel</span>
+            <span routerLink="/create-product"><i class="bi bi-gear"></i>admin panel</span>
+         
+
+
         </div>
          <nav class="nav-items">
             <a href="#"><i class="bi bi-house-add-fill"></i> view store</a>
@@ -13,6 +16,10 @@
             <a href=><i class="bi bi-box-arrow-right"></i> Logout</a>
         </nav>
     </header>
+    <div class="cr">
+        <h1 color="balck"><i class="bi bi-boxes"></i>Product mangement</h1>
+        <button class="btn btn-primary" routerLink="/create-product"><i class="bi bi-cart-plus-fill"></i>Add product</button>
+    </div>
     <div>
 <table class="table table-bordered">
     <thead>
@@ -40,7 +47,7 @@
         <td>{{pr.rating}}</td>
         <td>
             <button><i class="bi bi-pencil-square"></i></button>
-            <button><i class="bi bi-trash3"></i></button>
+            <button class="" (click)="delete(product._id) "><i class="bi bi-trash3"></i></button>
         </td>
     </tr>
 </tbody>

@@ -1,0 +1,31 @@
+<p>bank works!</p>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>id</th>
+        <th>holder name</th>
+        <th>balenece</th>
+        <th>account number</th>
+        <th>city</th>
+        <th>profile </th>
+        <th>ifsc code</th>
+        <th>actions</th>
+    </tr>
+    <tr *ngFor="let bank of banks">
+        <td>{{bank.id}}</td>
+        <td>{{bank.account_name}}</td>
+        <td>{{bank.account_balance}}</td>
+        <td>{{bank.account_number}}</td>
+        <td>{{bank.city}}</td>
+        <td><img src="{{bank.profie_picture}}" alt="" width="50px" height="50px"></td>
+        <td>{{bank.ifsc_code}}</td>
+        <td>
+            <button class="action-btn btn-view" routerLink="/bank-dateils/{{banks.id}}">View</button>
+            <button class="action-btn btn-edit" >Edit</button>
+            <button class="action-btn btn-delete" (click)="deletebank(bank.id)">Delete</button>
+        </td>
+
+
+    </tr>
+</table>

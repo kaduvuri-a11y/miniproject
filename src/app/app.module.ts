@@ -11,6 +11,9 @@ import { HttpClientModule} from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { CreateProductComponent } from './create-product/create-product.component';
+import { BankComponent } from './bank/bank.component';
+import { BankDateilsComponent } from './bank-dateils/bank-dateils.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { AddProductComponent } from './add-product/add-product.component';
     ForgotpasswordComponent,
     DashboardComponent,
     ProductDetailsComponent,
-    AddProductComponent
+    AddProductComponent,
+    CreateProductComponent,
+    BankComponent,
+    BankDateilsComponent,
   ],
   imports: [
     BrowserModule,

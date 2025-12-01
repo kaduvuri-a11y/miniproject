@@ -36,7 +36,10 @@ export class DashboardComponent {
       submit(){
         this.router.navigate(['dashboard/product'])
       }
-    
+     logout(){
+      localStorage.removeItem("token");
+      this.router.navigateByUrl('/login')
+     }
   }
 
 

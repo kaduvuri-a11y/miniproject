@@ -13,6 +13,12 @@ export class DashboardService {
    getproducts(id:string){
     return this.httpclient.get("https://shop-ease-mit.vercel.app/api/products/"+id);
   }
+  crateproduct(product:any){
+    return this.httpclient.post("https://shop-ease-mit.vercel.app/api/products",product)
+  }
+  deleteproduct(id:string){
+      return this.httpclient.delete("https://shop-ease-mit.vercel.app/api/products/"+id)
+  }
 }
 
 

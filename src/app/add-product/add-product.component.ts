@@ -16,5 +16,16 @@ export class AddProductComponent {
       }
     )
   }
+delete(id:string){
+  this.dashboradservice.deleteproduct(id).subscribe(
+    (data:any)=>{
+      alert('deleted sucessfully');
+       location.reload()
+    },
+     (err:any)=>{
+      alert('internal server error')
+     }
+  )
 
+}
 }

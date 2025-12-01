@@ -1,0 +1,11 @@
+label{
+    width: 120px;
+    margin: 10px;
+}
+label::after{
+    content:  ":";
+
+}
+form{
+    background-color: aqua;
+}
