@@ -15,6 +15,7 @@ import { CreateProductComponent } from './create-product/create-product.componen
 import { BankComponent } from './bank/bank.component';
 import { BankDateilsComponent } from './bank-dateils/bank-dateils.component';
 import { ButtonComponent } from './button/button.component';
+import { HelloComponent } from './hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ButtonComponent } from './button/button.component';
     BankComponent,
     BankDateilsComponent,
     ButtonComponent,
+    HelloComponent,
   ],
   imports: [
     BrowserModule,
